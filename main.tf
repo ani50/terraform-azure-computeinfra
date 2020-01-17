@@ -14,7 +14,7 @@ variable "subnet" {}
 
 module "computeinfra" {
     source = "git::https://github.com/ani50/azure-compute.git"
-    prefix = "${var.prefix}"
+    
     subscriptionId = "${var.subscriptionId}"
     clientId = "${var.clientId}"
     clientSecret = "${var.clientSecret}"
